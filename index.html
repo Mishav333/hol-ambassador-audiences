@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>House of Longevity · Ambassador audiences</title>
+<title>House of Longevity · Ambassadors</title>
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="fonts.css">
 <style>
@@ -28,40 +28,34 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;text-wra
 .intro{grid-template-columns:5fr 6fr;background:var(--sand)}
 .intro figure{height:100vh}
 .intro .col{align-self:center;padding:0 7vw 0 5vw;max-width:760px}
-.intro h2{font-size:clamp(38px,4vw,62px);line-height:1.05;margin-bottom:28px}
-.intro p{font-size:17px;max-width:36em;margin-bottom:16px}
-.intro .big{font-family:var(--serif);font-size:clamp(20px,1.7vw,25px);line-height:1.4}
+.intro h2{font-size:clamp(44px,4.8vw,78px);line-height:1;margin-bottom:26px}
+.intro p{font-size:18px;max-width:30em;margin-bottom:14px}
+.intro .big{font-family:var(--serif);font-size:clamp(23px,2vw,30px);line-height:1.3;margin-bottom:22px}
 .intro .rule{border-top:1px solid var(--lime);padding-top:16px;margin-top:26px;font-size:14px;color:#5b5247}
 /* overview */
-.overview{background:var(--char);color:var(--bone);grid-template-rows:auto 1fr;padding:7vh 5vw 6vh}
-.overview h2{font-size:clamp(34px,3.4vw,54px);line-height:1.05;max-width:16em}
-.overview .sub{font-size:16px;color:var(--lime);margin-top:10px;max-width:42em}
-.stages{display:grid;grid-template-columns:4.2fr 3.2fr 1.1fr;gap:3vw;margin-top:4vh;align-items:start}
-.stagecol h3{font-size:28px;border-top:1px solid var(--lime);padding-top:10px}
-.stagecol>p{font-size:14px;color:var(--lime);min-height:3.2em;margin:4px 0 14px;max-width:30em}
-.faces{display:grid;gap:12px}
-.st-pilot .faces{grid-template-columns:repeat(4,1fr)}
-.st-phase .faces{grid-template-columns:repeat(3,1fr)}
-.st-on .faces{grid-template-columns:1fr}
-.st-on h3{border-color:#5b5247;color:#b3a794}
+.overview{background:var(--char);color:var(--bone);grid-template-rows:auto auto;padding:8vh 5vw;align-content:center}
+.overview h2{font-size:clamp(44px,5vw,84px);line-height:1;max-width:14em}
+.overview .sub{font-family:var(--serif);font-size:clamp(20px,1.7vw,26px);color:var(--sand);margin-top:16px;max-width:30em;line-height:1.35}
+.faces{display:grid;grid-template-columns:repeat(8,1fr);gap:16px;margin-top:6vh;align-self:start}
+.fnum{display:block;font-family:var(--serif);font-size:15px;color:var(--lime);margin-top:10px}
 .face{text-decoration:none;color:var(--bone);display:block}
 .fimg{display:block;aspect-ratio:3/4;overflow:hidden;background:#3a342d}
 .fimg img{transition:transform .6s ease}
 .face:hover .fimg img{transform:scale(1.03)}
-.st-on .fimg img{filter:grayscale(.85) contrast(.9);opacity:.75}
-.fname{display:block;font-family:var(--serif);font-size:19px;line-height:1.2;margin-top:8px}
+.fname{display:block;font-family:var(--serif);font-size:clamp(18px,1.45vw,23px);line-height:1.15;margin-top:2px}
 /* persona shared */
-.stage{font-size:13px;color:var(--gold);margin-bottom:14px}
+.stage{font-size:15px;color:var(--gold);margin-bottom:18px;font-weight:500}
 .stage .num{font-family:var(--serif);font-size:17px;color:inherit;margin-right:10px;font-variant-numeric:tabular-nums}
-.pname{font-size:clamp(40px,4.3vw,70px);line-height:1;margin-bottom:20px}
-.who{font-family:var(--serif);font-size:clamp(20px,1.65vw,25px);line-height:1.35;margin-bottom:18px;max-width:28em}
+.pname{font-size:clamp(44px,4.8vw,80px);line-height:.98;margin-bottom:22px;max-width:11em}
+.who{font-family:var(--serif);font-size:clamp(21px,1.8vw,27px);line-height:1.32;margin-bottom:26px;max-width:24em}
 .prose p{font-size:15.5px;line-height:1.55;margin-bottom:10px;max-width:38em}
 .prose .approach{font-weight:500}
 .ledger{margin-top:20px;border-top:1px solid var(--lime)}
-.lrow{display:grid;grid-template-columns:11em 1fr;gap:16px;border-bottom:1px solid var(--lime);padding:8px 0}
+.lrow{display:grid;grid-template-columns:8em 1fr;gap:16px;border-bottom:1px solid var(--lime);padding:11px 0}
 .lrow dt{font-family:var(--serif);font-size:16px;color:var(--gold)}
-.lrow dd{font-size:14px;line-height:1.45}
-.lrow:nth-child(2) dd{font-family:var(--serif);font-size:17px}
+
+.lrow dd{font-size:15.5px;line-height:1.45;max-width:30em}
+.series dd b{font-family:var(--serif);font-weight:500;font-size:21px;margin-right:6px}
 figcaption,.cap{font-size:12.5px;color:#5f564c;margin-top:6px}
 /* split */
 .split{grid-template-columns:1fr 1fr;background:var(--bone)}
@@ -86,21 +80,18 @@ figcaption,.cap{font-size:12.5px;color:#5f564c;margin-top:6px}
 .dark .lrow dt{color:var(--lime)}
 .dark .who{color:var(--sand)}
 .dark .cap{color:var(--lime)}
-/* hold */
-.hold{grid-template-columns:4fr 7fr;background:#E9E3D8}
-.hold .holdimg{align-self:center;justify-self:center;width:min(30vw,420px);height:auto}
-.hold .holdimg img{aspect-ratio:4/5;height:auto;filter:grayscale(.7) contrast(.92) brightness(1.03)}
-.hold .col{align-self:center;padding:5vh 6vw 5vh 1vw;max-width:880px}
-.hold .pname{color:#4a433b}
-.hold .stage{color:#8E4A1F;font-size:15px;font-weight:600;border-left:3px solid var(--ember);padding-left:12px}
 /* close */
 .close{grid-template-columns:1fr 1fr;background:var(--char)}
 .close figure{position:relative;order:2;min-height:100vh}
 .close figure img{position:absolute;inset:0}
 .close .inner{align-self:center;padding:5vh 5.5vw;max-width:760px;color:var(--bone)}
-.close h2{font-size:clamp(40px,4.4vw,70px);line-height:1.03;margin-bottom:24px}
-.close p{font-size:16px;margin-bottom:14px;color:var(--sand);max-width:34em}
-.close .credit{margin-top:34px;padding-top:14px;border-top:1px solid rgba(217,201,174,.35);font-size:12.5px;color:var(--lime)}
+.close h2{font-size:clamp(46px,5vw,84px);line-height:1;margin-bottom:18px}
+.close p{font-size:17px;margin-bottom:12px;color:var(--sand);max-width:30em}
+.close .big{font-family:var(--serif);font-size:clamp(23px,2vw,30px);line-height:1.3;color:var(--bone);margin-bottom:30px}
+.close h3{font-size:26px;color:var(--lime);margin:8px 0 10px;padding-top:18px;border-top:1px solid rgba(217,201,174,.35)}
+.close ul{list-style:none}
+.close li{font-size:16.5px;color:var(--sand);padding:7px 0;max-width:30em}
+.close li b{font-family:var(--serif);font-weight:500;font-size:21px;color:var(--bone);margin-right:6px}
 .close .mark{margin-top:40px;color:var(--bone)}
 /* page counter */
 #pager{position:fixed;right:22px;bottom:16px;z-index:9;font-family:var(--serif);font-size:15px;color:var(--bone);mix-blend-mode:difference;font-variant-numeric:tabular-nums}
@@ -112,18 +103,13 @@ figcaption,.cap{font-size:12.5px;color:#5f564c;margin-top:6px}
   .cover .scrim{background:linear-gradient(180deg,rgba(34,30,25,.1) 20%,rgba(34,30,25,.88) 62%)}
   .cover .inner{width:auto;margin:0 7vw 8vh;align-self:end;justify-self:stretch}
   .intro figure,.split .half{height:62vh;min-height:0}
-  .intro .col,.split .col,.hold .col{padding:36px 7vw 48px}
+  .intro .col,.split .col{padding:36px 7vw 48px}
   .overview{padding:44px 6vw}
-  .stages{grid-template-columns:1fr;gap:34px}
-  .st-pilot .faces{grid-template-columns:repeat(2,1fr)}
-  .st-phase .faces{grid-template-columns:repeat(3,1fr)}
-  .st-on .faces{grid-template-columns:repeat(3,1fr)}
-  .stagecol>p{min-height:0}
+  .faces{grid-template-columns:repeat(2,1fr)}
   .wide figure{position:relative;height:56vh}
   .wide .scrim{display:none}
   .wide{background:var(--char)}
   .wide .col{width:auto;margin:0;padding:34px 7vw 48px}
-  .hold .holdimg{width:auto;padding:40px 7vw 0}
   .close figure{height:50vh;min-height:0}
   .close .inner{padding:44px 7vw 60px}
   .lrow{grid-template-columns:1fr;gap:2px}
@@ -133,18 +119,18 @@ figcaption,.cap{font-size:12.5px;color:#5f564c;margin-top:6px}
 @media screen and (min-width:861px) and (max-height:780px){
   .pname{font-size:clamp(36px,6vh,54px);margin-bottom:12px}
   .who{font-size:18px;margin-bottom:10px}
-  .prose p{font-size:14px;margin-bottom:7px}
+  .pname{max-width:12em}
   .stage{margin-bottom:8px}
   .ledger{margin-top:12px}
   .lrow{padding:5px 0}
   .lrow dd{font-size:13px}
   .lrow dt{font-size:15px}
-  .split .col,.hold .col{padding-top:3vh;padding-bottom:3vh}
+  .split .col{padding-top:3vh;padding-bottom:3vh}
+  .who{margin-bottom:14px}
   .intro p{font-size:15.5px}
   .intro .big{font-size:20px}
 }
 @media screen and (min-width:861px) and (max-height:660px){
-  .prose p{font-size:13.5px;line-height:1.45}
   .who{font-size:17px}
   .pname{font-size:36px}
 }
@@ -153,7 +139,6 @@ figcaption,.cap{font-size:12.5px;color:#5f564c;margin-top:6px}
   html{scroll-snap-type:none;background:none}
   .slide{width:1600px;height:900px;min-height:0;page-break-after:always;break-after:page}
   .intro figure,.split .half,.wide figure{height:900px;min-height:0}
-  .hold .holdimg{width:420px}
   .wide .col{width:640px}
   .cover .inner{width:560px}
   .close figure{height:900px;min-height:0}
@@ -166,145 +151,141 @@ figcaption,.cap{font-size:12.5px;color:#5f564c;margin-top:6px}
     <figure><img src="img/cover.jpg" alt="Two women mid-rally on a tennis court in late afternoon light" style="object-position:30% 50%"></figure>
     <div class="scrim"></div>
     <div class="inner">
-      <h1>The people we ask to stand with us</h1>
-      <p class="lede">Eight ambassador personas: who they are, who follows them, why they would back HoL, and where we find them.</p>
-      <p class="foot">House of Longevity. Ambassador program, audience book, October 2026.</p>
+      <h1>Stand with us.</h1>
+      <p class="lede">House of Longevity is building a team of ambassadors. Eight kinds of people. One of them is you.</p>
+      <p class="foot">House of Longevity. Ambassador program, 2026.</p>
     </div>
   </section>
 
-  <section class="slide intro" id="intro" data-title="How to read this">
+  <section class="slide intro" id="intro" data-title="Who we are">
     <figure><img src="img/intro.jpg" alt="An open ledger, glasses and a glass of water on a stone desk" style="object-position:50% 50%"></figure>
     <div class="col">
-      <h2>Audiences first, names second</h2>
-      <p class="big">The program works through people whose audiences already look after themselves and can afford to. Alex mapped eight kinds of people. This book gives each one a face.</p>
-      <p>Four go first, in a pilot. Each one tests a different audience, so by month three we know which kind of ambassador actually brings enquiries. Three wait for phase two. One is on hold until counsel clears the category.</p>
-      <p>We chose the stages on four tests: reach to people who already buy premium services, regulatory risk, content fit, and the job each one does in the channel mix. At least two of the pilot four are women.</p>
-      <p class="rule">Every ambassador is paid in equity, discloses the partnership in every post, and never talks about their own health or care, or anyone else's. The full rules sit in the program deck.</p>
+      <h2>The premium Australian longevity clinic.</h2>
+      <p class="big">Doctor-led. Built for people who take the long game seriously.</p>
+      <p>We don't want a billboard face.</p>
+      <p>We want people who already live this way, with a crowd that trusts them.</p>
+      <p>Eight roles. Different crowds. One standard.</p>
     </div>
   </section>
 
   <section class="slide overview" id="overview" data-title="The eight">
     <div>
-      <h2>Eight personas, three stages</h2>
-      <p class="sub">Tap a face to jump to that persona.</p>
+      <h2>Eight roles. One team.</h2>
+      <p class="sub">Some roles will have a few voices, some just one. Every one matters. Tap a face to find yours.</p>
     </div>
-    <div class="stages"><div class="stagecol st-pilot"><h3>Pilot</h3><p>Go first. Each tests a different audience, so by month three we know which kind of ambassador works.</p><div class="faces"><a class="face" href="#athlete"><span class="fimg"><img src="img/athlete.jpg" alt="" style="object-position:30% 50%"></span><span class="fname">Retired pro athlete</span></a><a class="face" href="#coach"><span class="fimg"><img src="img/coach.jpg" alt="" style="object-position:50% 30%"></span><span class="fname">Elite performance coach</span></a><a class="face" href="#midlife"><span class="fimg"><img src="img/t_midlife.jpg" alt="" style="object-position:50% 50%"></span><span class="fname">Midlife women&#x27;s strength voice</span></a><a class="face" href="#founder"><span class="fimg"><img src="img/founder.jpg" alt="" style="object-position:45% 35%"></span><span class="fname">Founder-operator</span></a></div></div><div class="stagecol st-phase"><h3>Phase two</h3><p>Wait for the pilot result.</p><div class="faces"><a class="face" href="#fifo"><span class="fimg"><img src="img/fifo.jpg" alt="" style="object-position:45% 35%"></span><span class="fname">FIFO and resources voice</span></a><a class="face" href="#endurance"><span class="fimg"><img src="img/t_endurance.jpg" alt="" style="object-position:50% 50%"></span><span class="fname">Endurance amateur</span></a><a class="face" href="#curator"><span class="fimg"><img src="img/t_curator.jpg" alt="" style="object-position:50% 50%"></span><span class="fname">Premium lifestyle curator</span></a></div></div><div class="stagecol st-on"><h3>On hold</h3><p>Not approached until counsel clears the category.</p><div class="faces"><a class="face" href="#optimiser"><span class="fimg"><img src="img/optimiser.jpg" alt="" style="object-position:50% 40%"></span><span class="fname">Longevity optimiser</span></a></div></div></div>
+    <div class="faces"><a class="face" href="#athlete"><span class="fimg"><img src="img/athlete.jpg" alt="" style="object-position:30% 50%"></span><span class="fnum">01</span><span class="fname">Retired pro</span></a><a class="face" href="#coach"><span class="fimg"><img src="img/coach.jpg" alt="" style="object-position:50% 30%"></span><span class="fnum">02</span><span class="fname">Elite coach</span></a><a class="face" href="#midlife"><span class="fimg"><img src="img/t_midlife.jpg" alt="" style="object-position:50% 50%"></span><span class="fnum">03</span><span class="fname">Strength voice</span></a><a class="face" href="#founder"><span class="fimg"><img src="img/founder.jpg" alt="" style="object-position:45% 35%"></span><span class="fnum">04</span><span class="fname">Founder</span></a><a class="face" href="#fifo"><span class="fimg"><img src="img/fifo.jpg" alt="" style="object-position:45% 35%"></span><span class="fnum">05</span><span class="fname">FIFO voice</span></a><a class="face" href="#endurance"><span class="fimg"><img src="img/t_endurance.jpg" alt="" style="object-position:50% 50%"></span><span class="fnum">06</span><span class="fname">Endurance athlete</span></a><a class="face" href="#curator"><span class="fimg"><img src="img/t_curator.jpg" alt="" style="object-position:50% 50%"></span><span class="fnum">07</span><span class="fname">Lifestyle curator</span></a><a class="face" href="#optimiser"><span class="fimg"><img src="img/optimiser.jpg" alt="" style="object-position:50% 40%"></span><span class="fnum">08</span><span class="fname">Longevity optimiser</span></a></div>
   </section>
 
-  <section class="slide wide wide-r" id="athlete" data-title="The retired pro athlete">
+  <section class="slide wide wide-r" id="athlete" data-title="The retired pro">
     <figure class="bleed"><img src="img/athlete.jpg" alt="A man in his fifties resting in an ocean rock pool at golden hour" style="object-position:30% 50%" loading="lazy"></figure>
     <div class="scrim"></div>
     <div class="col dark">
-      <p class="stage"><span class="num">1 of 8</span> Pilot, the anchor</p>
-      <h2 class="pname">The retired pro athlete</h2>
-      <p class="who">A former professional athlete from the NRL, AFL, rugby, cricket or the Olympics, now working in media, commentary or business.</p>
-      <div class="prose">
-        <p>A broad, mostly male following: tradies, FIFO workers, suburban dads. People who grew up watching them play and still trust their word.</p>
-        <p>They carry recognition into rooms the rest of the program can&#x27;t reach, and they are a natural fit for events and for a guest spot on Pep In Your Step.</p>
-        <p class="approach">Start with a podcast conversation about their career, not their health. Then the partnership, paid in equity.</p>
-      </div>
-      <dl class="ledger"><div class="lrow"><dt>Where we find them</dt><dd>Commentary panels, club ambassador rosters and athlete management agencies.</dd></div><div class="lrow"><dt>Their own series</dt><dd>After the siren</dd></div><div class="lrow"><dt>The question it answers</dt><dd>Does broad recognition bring enquiries, or only reach?</dd></div><div class="lrow"><dt>Watch for</dt><dd>Existing sport and media contracts, and past sponsor conflicts.</dd></div></dl></div>
+      <p class="stage"><span class="num">01</span> The retired pro</p>
+      <h2 class="pname">They never stopped watching.</h2>
+      <p class="who">You gave them years of Saturdays. They still trust your word.</p>
+      <dl class="ledger">
+        <div class="lrow"><dt>Your crowd</dt><dd>Tradies, FIFO crews, suburban dads. People who grew up with your name on their back.</dd></div>
+        <div class="lrow"><dt>Your role</dt><dd>Take HoL into rooms nobody else can reach. Events, big conversations, a seat on Pep In Your Step.</dd></div>
+        <div class="lrow series"><dt>Your series</dt><dd><b>After the siren</b> Life after the final whistle.</dd></div>
+      </dl></div>
   </section>
-  <section class="slide split split-left" id="coach" data-title="The elite performance coach">
-    <figure class="half"><img src="img/coach.jpg" alt="A strength coach in his forties watching an athlete trackside at first light" style="object-position:50% 30%" loading="lazy"><figcaption><span class="ai">Illustrative portrait, AI-generated.</span></figcaption></figure>
+  <section class="slide split split-left" id="coach" data-title="The elite coach">
+    <figure class="half"><img src="img/coach.jpg" alt="A strength coach in his forties watching an athlete trackside at first light" style="object-position:50% 30%" loading="lazy"><figcaption>Illustrative image</figcaption></figure>
     <div class="col">
-      <p class="stage"><span class="num">2 of 8</span> Pilot</p>
-      <h2 class="pname">The elite performance coach</h2>
-      <p class="who">A high-end personal trainer, strength and conditioning coach or gym owner who trains athletes, executives or talent.</p>
-      <div class="prose">
-        <p>People already paying for premium training. For them, spending on their health is a habit, not a stretch. It is the clearest sign of premium intent we can see.</p>
-        <p>Coaches see the point where training alone stops being enough. Their word carries weight with people who already take their bodies seriously.</p>
-        <p class="approach">Equity, and a clinic that respects their craft. They post their coaching, their gym and their ideas. They never refer clients and are never paid per client.</p>
-      </div>
-      <dl class="ledger"><div class="lrow"><dt>Where we find them</dt><dd>Premium studios in Bondi, Surry Hills, Toorak, Teneriffe and Cottesloe, and the coaches behind professional clubs.</dd></div><div class="lrow"><dt>Their own series</dt><dd>Session notes</dd></div><div class="lrow"><dt>The question it answers</dt><dd>Do followers who already pay for premium training enquire?</dd></div><div class="lrow"><dt>Watch for</dt><dd>Never refers clients, never paid per client.</dd></div></dl></div>
+      <p class="stage"><span class="num">02</span> The elite coach</p>
+      <h2 class="pname">You see the ceiling first.</h2>
+      <p class="who">Your people already invest in their bodies. You&#x27;re the voice they listen to.</p>
+      <dl class="ledger">
+        <div class="lrow"><dt>Your crowd</dt><dd>Athletes, executives and talent who already pay for the best.</dd></div>
+        <div class="lrow"><dt>Your role</dt><dd>Bring your craft: your floor, your methods, your thinking. We bring the doctors.</dd></div>
+        <div class="lrow series"><dt>Your series</dt><dd><b>Session notes</b> What you&#x27;re seeing on the floor this week.</dd></div>
+      </dl></div>
   </section>
-  <section class="slide split split-right" id="midlife" data-title="The midlife women&#x27;s strength voice">
-    <figure class="half"><img src="img/midlife.jpg" alt="A woman in her forties swimming in the open ocean at sunset" style="object-position:6% 50%" loading="lazy"><figcaption></figcaption></figure>
+  <section class="slide split split-right" id="midlife" data-title="The strength voice">
+    <figure class="half"><img src="img/midlife.jpg" alt="A woman in her forties swimming in the open ocean at sunset" style="object-position:6% 50%" loading="lazy"></figure>
     <div class="col">
-      <p class="stage"><span class="num">3 of 8</span> Pilot</p>
-      <h2 class="pname">The midlife women&#x27;s strength voice</h2>
-      <p class="who">A woman in midlife who talks openly about strength training, career and family.</p>
-      <div class="prose">
-        <p>Professional women who invest in their strength and their work, and who are often the person deciding on health for the whole household.</p>
-        <p>This is a core premium audience. Women here want real answers and decisions in their own hands, which is what a doctor-led clinic offers.</p>
-        <p class="approach">Lead with the doctors who lead HoL. She posts about strength, work, family and community, never about symptoms.</p>
-      </div>
-      <dl class="ledger"><div class="lrow"><dt>Where we find them</dt><dd>Women&#x27;s strength creators, presenters and community leaders.</dd></div><div class="lrow"><dt>Their own series</dt><dd>Barbell and board pack</dd></div><div class="lrow"><dt>The question it answers</dt><dd>Does a core premium audience trust the partnership?</dd></div><div class="lrow"><dt>Watch for</dt><dd>Talks about strength and career, never perimenopause or any symptom.</dd></div></dl></div>
+      <p class="stage"><span class="num">03</span> The strength voice</p>
+      <h2 class="pname">Strong in the boardroom. Strong under the bar.</h2>
+      <p class="who">You talk straight about strength, work and family. Women listen because you live it.</p>
+      <dl class="ledger">
+        <div class="lrow"><dt>Your crowd</dt><dd>Professional women running careers, households and their own training.</dd></div>
+        <div class="lrow"><dt>Your role</dt><dd>Show what strong looks like in midlife, and lead the conversation alongside our doctors.</dd></div>
+        <div class="lrow series"><dt>Your series</dt><dd><b>Barbell and board pack</b> Heavy lifts. Heavier weeks.</dd></div>
+      </dl></div>
   </section>
-  <section class="slide split split-left" id="founder" data-title="The founder-operator">
-    <figure class="half"><img src="img/founder.jpg" alt="A woman in her late forties in a studio office at dawn, looking toward the window" style="object-position:45% 35%" loading="lazy"><figcaption><span class="ai">Illustrative portrait, AI-generated.</span></figcaption></figure>
+  <section class="slide split split-left" id="founder" data-title="The founder">
+    <figure class="half"><img src="img/founder.jpg" alt="A woman in her late forties in a studio office at dawn, looking toward the window" style="object-position:45% 35%" loading="lazy"><figcaption>Illustrative image</figcaption></figure>
     <div class="col">
-      <p class="stage"><span class="num">4 of 8</span> Pilot</p>
-      <h2 class="pname">The founder-operator</h2>
-      <p class="who">A founder, CEO or investor with a public voice on LinkedIn, podcasts or X, talking about leadership and the long game.</p>
-      <div class="prose">
-        <p>Senior professionals with little time and an invest-in-the-asset mindset. The people closest to buying premium services, and to the corporate programs that come later.</p>
-        <p>The most credible voice for the premium tier, and a door into corporate health programs.</p>
-        <p class="approach">Co-builder framing: advisory status, equity and a place in the founding story. They post about building things, leadership and why standards matter.</p>
-      </div>
-      <dl class="ledger"><div class="lrow"><dt>Where we find them</dt><dd>The Australian startup and VC community, and business podcasts.</dd></div><div class="lrow"><dt>Their own series</dt><dd>Hard Tuesday</dd></div><div class="lrow"><dt>The question it answers</dt><dd>Does a business audience enquire, and does it open corporate doors?</dd></div><div class="lrow"><dt>Watch for</dt><dd>Business conflicts. Never speaks about their own care.</dd></div></dl></div>
+      <p class="stage"><span class="num">04</span> The founder</p>
+      <h2 class="pname">You build for the long game. So do we.</h2>
+      <p class="who">People follow how you think, how you lead and how you hold your standards.</p>
+      <dl class="ledger">
+        <div class="lrow"><dt>Your crowd</dt><dd>Founders, CEOs and senior operators with zero time to waste.</dd></div>
+        <div class="lrow"><dt>Your role</dt><dd>Help shape HoL as it grows. Your thinking, written into our founding story.</dd></div>
+        <div class="lrow series"><dt>Your series</dt><dd><b>Hard Tuesday</b> Leading when the week bites back.</dd></div>
+      </dl></div>
   </section>
-  <section class="slide split split-right" id="fifo" data-title="The FIFO and resources voice">
-    <figure class="half"><img src="img/fifo.jpg" alt="A mine worker in hi-vis at dawn in the Pilbara" style="object-position:45% 35%" loading="lazy"><figcaption><span class="ai">Illustrative portrait, AI-generated.</span></figcaption></figure>
+  <section class="slide split split-right" id="fifo" data-title="The FIFO voice">
+    <figure class="half"><img src="img/fifo.jpg" alt="A mine worker in hi-vis at dawn in the Pilbara" style="object-position:45% 35%" loading="lazy"><figcaption>Illustrative image</figcaption></figure>
     <div class="col">
-      <p class="stage"><span class="num">5 of 8</span> Phase two, if the pilot works</p>
-      <h2 class="pname">The FIFO and resources voice</h2>
-      <p class="who">A creator from mining, trades or FIFO work: a site worker, trainer or ex-military.</p>
-      <div class="prose">
-        <p>Workers who are well paid and short on time while on swing. Telehealth suits their rosters. A familiar face from site beats a celebrity.</p>
-        <p>HoL already advertises on the mine network: 166 screens across 60 sites, reaching 53,995 workers in five states. This voice tests whether a person adds anything the screens don&#x27;t.</p>
-        <p class="approach">Built for how you actually live and work. They post life on swing and training on roster. They never appear on the screens, and their results are tracked apart from them.</p>
-      </div>
-      <dl class="ledger"><div class="lrow"><dt>Where we find them</dt><dd>Mining and trades creators on TikTok and Instagram, site communities and FIFO groups.</dd></div><div class="lrow"><dt>Their own series</dt><dd>Swing diary</dd></div><div class="lrow"><dt>The question it answers</dt><dd>Does a familiar voice add enquiries beyond the screens?</dd></div><div class="lrow"><dt>Watch for</dt><dd>Site and employer rules. Kept separate from the screen advertising.</dd></div></dl></div>
+      <p class="stage"><span class="num">05</span> The FIFO voice</p>
+      <h2 class="pname">Your crew trusts you more than any ad.</h2>
+      <p class="who">Early starts, long swings, the flight home. You know the roster because you live it.</p>
+      <dl class="ledger">
+        <div class="lrow"><dt>Your crowd</dt><dd>FIFO crews, tradies and site workers right across the country.</dd></div>
+        <div class="lrow"><dt>Your role</dt><dd>Be the familiar face. HoL is already on 166 screens across 60 mine sites. You make it human.</dd></div>
+        <div class="lrow series"><dt>Your series</dt><dd><b>Swing diary</b> Life on roster, one swing at a time.</dd></div>
+      </dl></div>
   </section>
-  <section class="slide wide wide-l" id="endurance" data-title="The endurance amateur">
+  <section class="slide wide wide-l" id="endurance" data-title="The endurance athlete">
     <figure class="bleed"><img src="img/endurance.jpg" alt="Four men cycling a coastal road at golden hour" style="object-position:62% 55%" loading="lazy"></figure>
     <div class="scrim"></div>
     <div class="col dark">
-      <p class="stage"><span class="num">6 of 8</span> Phase two, if the pilot works</p>
-      <h2 class="pname">The endurance amateur</h2>
-      <p class="who">An Ironman, Hyrox, marathon or cycling creator who lives by the training block.</p>
-      <div class="prose">
-        <p>People with expensive hobbies who already spend on gear, coaching and race entry. Their followers plan seasons, not weekends.</p>
-        <p>Testing, tracking and planning is how this world already thinks. A doctor-led clinic sits naturally next to the coach and the bike fitter.</p>
-        <p class="approach">Training-block and race-day storytelling, with HoL as the partner in the background. Training and races only, no data about their own body.</p>
-      </div>
-      <dl class="ledger"><div class="lrow"><dt>Where we find them</dt><dd>Strava clubs, Hyrox gyms, triathlon podcasts and cycling YouTube.</dd></div><div class="lrow"><dt>Their own series</dt><dd>Bunch rules</dd></div><div class="lrow"><dt>The question it answers</dt><dd>Can a data-heavy culture stay off results and numbers?</dd></div><div class="lrow"><dt>Watch for</dt><dd>The pull toward results and body numbers.</dd></div></dl></div>
+      <p class="stage"><span class="num">06</span> The endurance athlete</p>
+      <h2 class="pname">Race day starts months out.</h2>
+      <p class="who">Ironman, Hyrox, the marathon, the Sunday bunch. You live by the training block.</p>
+      <dl class="ledger">
+        <div class="lrow"><dt>Your crowd</dt><dd>People who plan seasons, not weekends, and do it properly.</dd></div>
+        <div class="lrow"><dt>Your role</dt><dd>Tell the story of the block, the start line and everything between. HoL rides with you.</dd></div>
+        <div class="lrow series"><dt>Your series</dt><dd><b>Bunch rules</b> The unwritten rules of the long ride.</dd></div>
+      </dl></div>
   </section>
-  <section class="slide split split-right" id="curator" data-title="The premium lifestyle curator">
-    <figure class="half"><img src="img/curator.jpg" alt="Two women walking on a beach with coffee in the morning" style="object-position:50% 45%" loading="lazy"><figcaption></figcaption></figure>
+  <section class="slide split split-right" id="curator" data-title="The lifestyle curator">
+    <figure class="half"><img src="img/curator.jpg" alt="Two women walking on a beach with coffee in the morning" style="object-position:50% 45%" loading="lazy"></figure>
     <div class="col">
-      <p class="stage"><span class="num">7 of 8</span> Phase two, one event first</p>
-      <h2 class="pname">The premium lifestyle curator</h2>
-      <p class="who">A wellness, travel or hospitality creator, or the owner of a retreat or venue in Byron, Noosa or Sydney&#x27;s east.</p>
-      <div class="prose">
-        <p>People who already spend on retreats, saunas and good places to be. They come with the venue as much as the voice.</p>
-        <p>They place HoL inside a considered life: long tables, early mornings, good places. It matches the brand&#x27;s quiet tempo.</p>
-        <p class="approach">One sponsored event before any grant: a long table or morning swim they host, with HoL as a disclosed sponsor.</p>
-      </div>
-      <dl class="ledger"><div class="lrow"><dt>Where we find them</dt><dd>Retreat and venue owners, luxury travel creators and hospitality groups.</dd></div><div class="lrow"><dt>Their own series</dt><dd>Long table</dd></div><div class="lrow"><dt>The question it answers</dt><dd>Does one sponsored event bring enquiries before any grant?</dd></div><div class="lrow"><dt>Watch for</dt><dd>Must pass the test: HoL is a clinic, not a hotel or a spa.</dd></div></dl></div>
+      <p class="stage"><span class="num">07</span> The lifestyle curator</p>
+      <h2 class="pname">You set the table. People come.</h2>
+      <p class="who">Retreats, venues, long lunches, early swims. You know how to make a place feel right.</p>
+      <dl class="ledger">
+        <div class="lrow"><dt>Your crowd</dt><dd>People who travel well, eat well and choose carefully where they spend their time.</dd></div>
+        <div class="lrow"><dt>Your role</dt><dd>Host. Long tables and morning swims, with HoL in the room.</dd></div>
+        <div class="lrow series"><dt>Your series</dt><dd><b>Long table</b> Good food, good people, the long view.</dd></div>
+      </dl></div>
   </section>
-  <section class="slide hold" id="optimiser" data-title="The longevity optimiser">
-    <figure class="holdimg"><img src="img/optimiser.jpg" alt="A woman in a cold plunge tub by the ocean at sunrise" style="object-position:50% 40%" loading="lazy"><figcaption><span class="ai">Illustrative portrait, AI-generated.</span></figcaption></figure>
+  <section class="slide split split-left" id="optimiser" data-title="The longevity optimiser">
+    <figure class="half"><img src="img/optimiser.jpg" alt="A woman in a cold plunge tub by the ocean at sunrise" style="object-position:50% 40%" loading="lazy"><figcaption>Illustrative image</figcaption></figure>
     <div class="col">
-      <p class="stage"><span class="num">8 of 8</span> On hold, until counsel clears it</p>
-      <h2 class="pname">The longevity optimiser</h2>
-      <p class="who">A creator covering sleep, wearables, cold and heat, and recovery.</p>
-      <div class="prose">
-        <p>Early adopters who are fluent in the language of longevity. Their audience overlaps most with people already buying unapproved products online.</p>
-        <p>In Alex&#x27;s first draft this was the bridge from the grey market to doctor-supervised care, and it is still the market thesis. It is also the highest regulatory risk in the program.</p>
-        <p class="approach">Not approached until counsel clears the category. If cleared, screen out anyone who has pushed grey-market products or extreme claims.</p>
-      </div>
-      <dl class="ledger"><div class="lrow"><dt>Where we find them</dt><dd>Longevity podcasts, wearable and recovery creators, biohacking communities.</dd></div><div class="lrow"><dt>The question it answers</dt><dd>Held. The question comes after counsel&#x27;s view.</dd></div><div class="lrow"><dt>Watch for</dt><dd>The highest regulatory risk. Held until counsel clears it.</dd></div></dl></div>
+      <p class="stage"><span class="num">08</span> The longevity optimiser</p>
+      <h2 class="pname">You were here before it had a name.</h2>
+      <p class="who">Sleep, recovery, heat, cold. You&#x27;ve been tracking it for years.</p>
+      <dl class="ledger">
+        <div class="lrow"><dt>Your crowd</dt><dd>Early adopters who speak the language of longevity and want it done properly.</dd></div>
+        <div class="lrow"><dt>Your role</dt><dd>Show your crowd what doing it right looks like: doctor-led, evidence first.</dd></div>
+        <div class="lrow series"><dt>Your series</dt><dd><b>Dawn log</b> The morning routine, done properly.</dd></div>
+      </dl></div>
   </section>
 
   <section class="slide close" id="close" data-title="Next">
     <figure><img src="img/close.jpg" alt="A wave breaking at dusk" style="object-position:100% 50%"></figure>
     <div class="inner">
-      <h2>Next, the names</h2>
-      <p>For each pilot persona, the program owner builds a shortlist of real people. Each person is ranked on where their audience lives, signs of premium spend, their past content and their fit with HoL, using data they share at vetting.</p>
-      <p>Audience size, income and age are researched person by person, not assumed. Nobody is approached until counsel has given a written view on the program.</p>
-      <p class="credit">Persona thinking by Alex, from the first ambassador program draft. Revised October 2026 to remove unsourced figures. The coach, founder, FIFO and optimiser portraits are AI-generated illustrations of a type of person, not real people. All other photography is from the House of Longevity library. Mine network figures: HoL Go To Market and Capital deck, August 2026.</p>
+      <h2>See yourself in here?</h2>
+      <p class="big">Then let's talk. The next step is a conversation.</p>
+      <h3>How we work together</h3>
+      <ul>
+        <li><b>Always upfront.</b> Every post says we're partners.</li>
+        <li><b>Your story, not your chart.</b> No one talks about their health or treatment, yours or anyone's.</li>
+        <li><b>Doctors do the medicine.</b> You do what you do best.</li>
+      </ul>
       <p class="mark">House of Longevity</p>
     </div>
   </section>
